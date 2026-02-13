@@ -33,7 +33,7 @@ function showSubjects() {
   subject.innerHTML = `<option value="">Select Subject</option>`;
 
   // ✅ CSE 2-2 Subjects
-  if (branch === "cse" && year === "" && sem === "1") {
+  if (branch === "cse" && year === "1" && sem === "1") {
     subject.innerHTML += `
       <option value="c">C Programming</option>
       <option value="chemistry">Chemistry</option>
@@ -367,5 +367,6 @@ function showLink() {
       </a>`;
   }
 }
+
 
 
