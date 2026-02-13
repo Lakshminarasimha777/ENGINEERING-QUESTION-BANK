@@ -81,7 +81,7 @@ function showSubjects() {
 
 
 
-  else if (branch === "me" && year === "1" && sem === "1") {
+   else if (branch === "me" && year === "1" && sem === "1") {
     subject.innerHTML += `
       <option value="c">C Programming</option>
       <option value="chemistry">Chemistry</option>
@@ -367,6 +367,7 @@ function showLink() {
       </a>`;
   }
 }
+
 
 
 
