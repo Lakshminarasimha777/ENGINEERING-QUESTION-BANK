@@ -33,11 +33,14 @@ function showSubjects() {
   subject.innerHTML = `<option value="">Select Subject</option>`;
 
   // ✅ CSE 2-2 Subjects
-  if (branch === "cse" && year === "2" && sem === "2") {
+  if (branch === "cse" && year === "" && sem === "1") {
     subject.innerHTML += `
-      <option value="java">Java Programming</option>
-      <option value="ds">Data Structures</option>
-      <option value="coa">Computer Organization</option>
+      <option value="c">C Programming</option>
+      <option value="chemistry">Chemistry</option>
+      <option value="lac">LAC</option>
+      <option value="EG">Engineering Graphics</option>
+      <option value="bcme">BCME</option>
+      
     `;
   }
 
@@ -99,7 +102,45 @@ function showSubjects() {
       <option value="bcme">BCME</option>
 
     `;
+  } 
+
+   else if (branch === "csc" && year === "1" && sem === "1") {
+    subject.innerHTML += `
+      <option value="c">C Programming</option>
+      <option value="chemistry">Chemistry</option>
+      <option value="lac">LAC</option>
+      <option value="EG">Engineering Graphics</option>
+      <option value="bcme">BCME</option>
+
+    `;
   }  
+
+
+
+   else if (branch === "ds" && year === "1" && sem === "1") {
+    subject.innerHTML += `
+      <option value="c">C Programming</option>
+      <option value="chemistry">Chemistry</option>
+      <option value="lac">LAC</option>
+      <option value="EG">Engineering Graphics</option>
+      <option value="bcme">BCME</option>
+
+    `;
+  }  
+
+
+
+
+    else if (branch === "eee" && year === "1" && sem === "1") {
+    subject.innerHTML += `
+      <option value="c">C Programming</option>
+      <option value="chemistry">Chemistry</option>
+      <option value="lac">LAC</option>
+      <option value="EG">Engineering Graphics</option>
+      <option value="bcme">BCME</option>
+
+    `;
+  }   
 
 
    else if (branch === "ai" && year === "1" && sem === "1") {
@@ -119,9 +160,132 @@ function showSubjects() {
       <option value="devc">DEVC</option>
       <option value="physics">ENGINEERING PHYSICS</option>
       <option value="english">COMMUNICATIVE ENGLISH</option>
+      <option value="beee">BEEE</option>
+      <option value="DS">DATA STRUCTURE</option>
+      
 
     `;
   }
+
+
+    else if (branch === "ece" && year === "1" && sem === "2") {
+    subject.innerHTML += `
+      <option value="devc">DEVC</option>
+      <option value="physics">ENGINEERING PHYSICS</option>
+      <option value="english">COMMUNICATIVE ENGLISH</option>
+      <option value="beee">BEEE</option>
+      <option value="DS">DATA STRUCTURE</option>
+      
+
+    `;
+  } 
+
+
+    else if (branch === "civil" && year === "1" && sem === "2") {
+    subject.innerHTML += `
+      <option value="devc">DEVC</option>
+      <option value="physics">ENGINEERING PHYSICS</option>
+      <option value="english">COMMUNICATIVE ENGLISH</option>
+      <option value="beee">BEEE</option>
+
+
+    `;
+  }
+
+
+    else if (branch === "me" && year === "1" && sem === "2") {
+    subject.innerHTML += `
+      <option value="devc">DEVC</option>
+      <option value="physics">ENGINEERING PHYSICS</option>
+      <option value="english">COMMUNICATIVE ENGLISH</option>
+      <option value="beee">BEEE</option>
+
+
+    `;
+  }
+
+    else if (branch === "ai" && year === "1" && sem === "2") {
+    subject.innerHTML += `
+      <option value="devc">DEVC</option>
+      <option value="physics">ENGINEERING PHYSICS</option>
+      <option value="english">COMMUNICATIVE ENGLISH</option>
+      <option value="beee">BEEE</option>
+      <option value="DS">DATA STRUCTURE</option>
+      
+
+    `;
+  }
+
+
+
+
+    else if (branch === "aids" && year === "1" && sem === "2") {
+    subject.innerHTML += `
+      <option value="devc">DEVC</option>
+      <option value="physics">ENGINEERING PHYSICS</option>
+      <option value="english">COMMUNICATIVE ENGLISH</option>
+      <option value="beee">BEEE</option>
+      <option value="DS">DATA STRUCTURE</option>
+      
+
+    `;
+  }
+
+
+
+
+    else if (branch === "eee" && year === "1" && sem === "2") {
+    subject.innerHTML += `
+      <option value="devc">DEVC</option>
+      <option value="physics">ENGINEERING PHYSICS</option>
+      <option value="english">COMMUNICATIVE ENGLISH</option>
+      <option value="beee">BEEE</option>
+
+
+    `;
+  }
+
+
+
+    else if (branch === "ds" && year === "1" && sem === "2") {
+    subject.innerHTML += `
+      <option value="devc">DEVC</option>
+      <option value="physics">ENGINEERING PHYSICS</option>
+      <option value="english">COMMUNICATIVE ENGLISH</option>
+      <option value="beee">BEEE</option>
+      <option value="DS">DATA STRUCTURE</option>
+      
+
+    `;
+  }
+
+
+
+    else if (branch === "csc" && year === "1" && sem === "2") {
+    subject.innerHTML += `
+      <option value="devc">DEVC</option>
+      <option value="physics">ENGINEERING PHYSICS</option>
+      <option value="english">COMMUNICATIVE ENGLISH</option>
+      <option value="beee">BEEE</option>
+      <option value="DS">DATA STRUCTURE</option>
+      
+
+    `;
+  }
+
+
+
+    else if (branch === "cse" && year === "1" && sem === "2") {
+    subject.innerHTML += `
+      <option value="devc">DEVC</option>
+      <option value="physics">ENGINEERING PHYSICS</option>
+      <option value="english">COMMUNICATIVE ENGLISH</option>
+      <option value="beee">BEEE</option>
+      <option value="DS">DATA STRUCTURE</option>
+      
+
+    `;
+  }    
 
   else {
     subject.innerHTML += `
@@ -157,9 +321,33 @@ function showLink() {
       </a>`;
   }
 
+
+    if (sub === "beee") {
+    box.innerHTML = `
+      <a href="  https://drive.google.com/file/d/1eaSVD6RBEddcAPOcp-9-DLK1LRe-YanT/view?usp=drivesdk   " target="_blank" class="btn">
+        View BEEE Bank
+      </a>`;
+  }
+
+
+    if (sub === "c") {
+    box.innerHTML = `
+      <a href=" https://drive.google.com/file/d/1AumMkFIbAbwKfrwImZ4c-NV5CJbbAXu3/view?usp=drivesdk    " target="_blank" class="btn">
+        View IP Question Bank
+      </a>`;
+  }
+
+
+    if (sub === "lac") {
+    box.innerHTML = `
+      <a href=" https://drive.google.com/file/d/1anVtnWNFQmsQvsP4vpFD5Tof972deENY/view?usp=drivesdk  " target="_blank" class="btn">
+        View LAC Question Bank
+      </a>`;
+  }
+
   if (sub === "signals") {
     box.innerHTML = `
-      <a href="https://drive.google.com/file/d/17QvOVDq0ozVvYJ8yWIpQKvrx9qxjofte/view?usp=drivesdk" target="_blank" class="btn">
+      <a href="      " target="_blank" class="btn">
         View Signals Question Bank
       </a>`;
   }
@@ -179,4 +367,5 @@ function showLink() {
       </a>`;
   }
 }
+
 
