@@ -42,12 +42,76 @@ function showSubjects() {
   }
 
   // ✅ ECE 2-2 Subjects
-  else if (branch === "ece" && year === "2" && sem === "2") {
+  else if (branch === "it" && year === "1" && sem === "1") {
     subject.innerHTML += `
-      <option value="signals">Signals & Systems</option>
-      <option value="digital">Digital Electronics</option>
+      <option value="c">C Programming</option>
+      <option value="chemistry">Chemistry</option>
+      <option value="lac">LAC</option>
+      <option value="EG">Engineering Graphics</option>
+      <option value="bcme">BCME</option>
+      
     `;
   }
+
+
+  else if (branch === "ece" && year === "1" && sem === "1") {
+    subject.innerHTML += `
+      <option value="c">C Programming</option>
+      <option value="chemistry">Chemistry</option>
+      <option value="lac">LAC</option>
+      <option value="EG">Engineering Graphics</option>
+      <option value="bcme">BCME</option>
+    `;
+  }  
+
+
+
+  else if (branch === "civil" && year === "1" && sem === "1") {
+    subject.innerHTML += `
+      <option value="c">C Programming</option>
+      <option value="chemistry">Chemistry</option>
+      <option value="lac">LAC</option>
+      <option value="EG">Engineering Graphics</option>
+      <option value="bcme">BCME</option>
+    `;
+  }  
+
+
+
+  else if (branch === "me" && year === "1" && sem === "1") {
+    subject.innerHTML += `
+      <option value="c">C Programming</option>
+      <option value="chemistry">Chemistry</option>
+      <option value="lac">LAC</option>
+      <option value="EG">Engineering Graphics</option>
+      <option value="bcme">BCME</option>
+
+    `;
+  }  
+
+
+   else if (branch === "aids" && year === "1" && sem === "1") {
+    subject.innerHTML += `
+      <option value="c">C Programming</option>
+      <option value="chemistry">Chemistry</option>
+      <option value="lac">LAC</option>
+      <option value="EG">Engineering Graphics</option>
+      <option value="bcme">BCME</option>
+
+    `;
+  }  
+
+
+   else if (branch === "ai" && year === "1" && sem === "1") {
+    subject.innerHTML += `
+      <option value="c">C Programming</option>
+      <option value="chemistry">Chemistry</option>
+      <option value="lac">LAC</option>
+      <option value="EG">Engineering Graphics</option>
+      <option value="bcme">BCME</option>
+
+    `;
+  }    
 
 
   else if (branch === "it" && year === "1" && sem === "2") {
@@ -115,3 +179,4 @@ function showLink() {
       </a>`;
   }
 }
+
