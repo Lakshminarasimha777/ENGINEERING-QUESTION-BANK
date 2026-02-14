@@ -1,42 +1,135 @@
+/* Global */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #00c6ff, #0072ff);
-  text-align: center;
+  font-family: "Inter", sans-serif;
+  background: #f6f8fc;
+  color: #111;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.container {
-  width: 450px;
-  margin: 80px auto;
+/* Top App Header */
+.app-header {
+  width: 100%;
+  padding: 25px;
+  text-align: left;
+
+  background: linear-gradient(to right, #0f9d58, #4285f4);
+  color: white;
+
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+
+  box-shadow: 0px 6px 18px rgba(0,0,0,0.25);
+}
+
+.app-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.app-header p {
+  margin-top: 5px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Main Card */
+.app-card {
+  width: 90%;
+  max-width: 420px;
   background: white;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0px 0px 20px black;
+
+  margin-top: -35px;
+  padding: 25px;
+
+  border-radius: 22px;
+
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.12);
+
+  animation: slideUp 0.8s ease;
 }
 
-h1 {
-  color: #0072ff;
+/* Animation */
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
+.app-card h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* Input Box */
+.input-box {
+  margin-bottom: 18px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+/* Dropdown */
 select {
   width: 100%;
-  padding: 12px;
-  margin-top: 15px;
-  border-radius: 10px;
-  border: 2px solid #0072ff;
-  font-size: 16px;
+  padding: 14px;
+
+  border-radius: 14px;
+  border: 1px solid #ddd;
+
+  font-size: 15px;
+  background: #f9fafc;
+
+  outline: none;
+  transition: 0.25s;
 }
 
+select:focus {
+  border-color: #4285f4;
+  box-shadow: 0px 0px 0px 3px rgba(66,133,244,0.25);
+}
+
+/* Download Button */
 #downloadBox {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
+/* Play Store Button */
 .btn {
-  background: #0072ff;
-  color: white;
-  padding: 12px 25px;
+  display: block;
+  width: 100%;
+  padding: 15px;
+
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 700;
+
   text-decoration: none;
-  border-radius: 10px;
-  font-size: 18px;
-  display: inline-block;
+  text-align: center;
+
+  color: white;
+  background: #0f9d58;
+
+  box-shadow: 0px 8px 18px rgba(15,157,88,0.35);
+
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+  background: #0b8043;
 }
