@@ -353,6 +353,36 @@ function showLink() {
   }
 
 
+    if (sub === "bcme") {
+    box.innerHTML = `
+      <a href="https://drive.google.com/file/d/1NRnbJbqwOV-3_i3E6k6SQHiYlbpw2g_F/view?usp=drivesdk " target="_blank" class="btn">
+        View BCME Question Bank
+      </a>`;
+  }
+
+
+
+    if (sub === "DS") {
+    box.innerHTML = `
+      <a href=" https://drive.google.com/file/d/19WRvK7QWN7-sGQa3xAzribwSZ_eNt_Ob/view?usp=drivesdk  " target="_blank" class="btn">
+        View DATA STRUCTURES Question Bank
+      </a>`;
+  }
+
+
+
+
+    if (sub === "EG") {
+    box.innerHTML = `
+      <a href="    https://drive.google.com/file/d/12TgqdI00xwEmdpvRYxIr8mHIR2YCNkT2/view?usp=drivesdk  " target="_blank" class="btn">
+        View ENGINEERING GRAPHICS Question Bank
+      </a>`;
+  }
+
+
+
+
+
   if (sub === "english") {
     box.innerHTML = `
       <a href="https://drive.google.com/file/d/1huOjIGT2jbWh9rP7YISvmIejz-EG4yZp/view?usp=drivesdk" target="_blank" class="btn">
@@ -367,6 +397,7 @@ function showLink() {
       </a>`;
   }
 }
+
 
 
 
